@@ -20,8 +20,8 @@ app.get("/get-location", (req, res) => {
 
 // Simulação de movimento
 setInterval(() => {
-  currentLocation.lat += (Math.random() - 0.5) * 0.0005;
-  currentLocation.lng += (Math.random() - 0.5) * 0.0005;
+  currentLocation.lat += (Math.random() - 1.0) * 0.0005;
+  currentLocation.lng += (Math.random() - 1.0) * 0.0005;
   console.log("Localização simulada:", currentLocation);
 }, 5000); // atualiza a cada 5 segundos
 
